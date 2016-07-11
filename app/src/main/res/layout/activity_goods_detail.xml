@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_meal"
+            android:text="欢乐套餐"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:text="(共12件)"
+            android:textSize="16sp"
+            android:id="@+id/tv_num"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_meal"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian" />
+
+    <com.huiyi.ruyishe.view.MyListView
+        android:background="@color/white"
+        android:id="@+id/lv_product"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:listitem="@layout/activity_goods_detail_item">
+    </com.huiyi.ruyishe.view.MyListView>
+</LinearLayout>
